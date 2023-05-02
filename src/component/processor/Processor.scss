@@ -1,0 +1,134 @@
+.Processoe {
+  margin-top: 20px;
+  padding: 10px 40px;
+  .processor-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    img {
+      width: 385px;
+    }
+  }
+  .processor-right {
+    display: flex;
+    gap: 20px;
+    .processor-right-one {
+      border: 2px solid $blue-color;
+      .SpecialDeal {
+        text-align: start;
+        padding: 10px;
+        text-transform: uppercase;
+        font-size: 20px;
+        border-bottom: 1px solid $light-grey;
+      }
+      .blue {
+        width: 200px;
+        height: 0px;
+        margin-left: 10px;
+        border: 1px solid $blue-color;
+      }
+      .processor-right-wrap {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        .image {
+          width: 250px;
+          height: 300px;
+        }
+        .p-right-text {
+          .Ryzen {
+            font-size: 14px;
+            text-align: start;
+            max-width: 300px;
+            margin-bottom: 10px;
+          }
+          .Ryzen:hover {
+            color: $blue-color;
+          }
+          .span {
+            display: flex;
+            gap: 20px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            .span-p {
+              color: $grey-color;
+            }
+            .span-off {
+              font-weight: bold;
+              color: $green;
+            }
+          }
+          .cart {
+            display: flex;
+            gap: 10px;
+            .cart-p {
+              padding: 10px 15px;
+              font-size: 15px;
+              box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            }
+            .cart-p:hover {
+              color: $blue-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .Processoe {
+    padding: 10px 40px;
+    .processor-left {
+      img {
+        width: 700px;
+        height: 300px;
+      }
+    }
+    .processor-right {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .Processoe {
+    padding: 10px 40px;
+    .processor-left {
+      img {
+        width: 700px;
+        height: 300px;
+      }
+    }
+    .processor-right {
+      display: flex;
+      gap: 20px;
+      .processor-right-one {
+       
+        
+        .processor-right-wrap {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          align-items: center;
+          .image {
+            width: 250px;
+            height: 250px;
+          }
+          .p-right-text {
+            margin-bottom: 10px;
+            .Ryzen {
+             
+              margin-bottom: 10px;
+            }
+           
+          }
+        }
+      }
+    }
+  }
+}

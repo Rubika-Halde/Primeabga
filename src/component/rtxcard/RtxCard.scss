@@ -1,0 +1,59 @@
+.RtxCard {
+  padding: 10px 40px;
+
+  .banner-right {
+    margin-bottom: 30px;
+    .banner-right-head {
+      margin-bottom: 30px;
+      text-align: start;
+      .banner-right-para {
+        font-size: 20px;
+
+        padding-bottom: 10px;
+        border-bottom: 1px solid $light-grey;
+      }
+      .line {
+        width: 230px;
+        border-bottom: 1.5px solid $blue-color;
+      }
+    }
+    .banner-right-swiper {
+      .my-Swiper {
+      }
+      .Swiper-Slide {
+        .Swiper-Slide-para {
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+        .Swiper-Slide-para:hover {
+          color: $blue-color;
+        }
+        .swiper-slide-top {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          margin-bottom: 10px;
+          .swiper-slide-top-para {
+            color: $grey-color;
+          }
+          .swiper-slide-top-green {
+            font-weight: bold;
+            color: $green;
+          }
+        }
+      }
+      .Swiper-Slide:hover {
+        background-color: $white-color;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+    }
+  }
+  .rtxcard-imgs {
+    img {
+      margin-bottom: 20px;
+    }
+    .img-three{
+        width: 100%;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.ShopBy {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  width: 236px;
+  margin-left: 40px;
+  background-color: $white-color;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  .ShopBy-p {
+    border-bottom: 1px solid $light-grey;
+    border-left: 1px solid $light-grey;
+    width: 100%;
+    padding: 20px;
+    text-align: start;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}

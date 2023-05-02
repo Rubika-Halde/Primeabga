@@ -1,0 +1,25 @@
+.Enterprise {
+  @include prime(start, space-around);
+  padding: 40px 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: $white-color;
+  width: 1200px;
+  height: 600px;
+  .enterprise-one {
+    .Wrapper {
+      .heading {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+      .server {
+        list-style: none;
+        text-align: start;
+        .amd {
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

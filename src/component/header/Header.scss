@@ -1,0 +1,153 @@
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 70px;
+  position: relative;
+  border-bottom: 1px solid $light-grey;
+  .header-left {
+    .header-left-img {
+      width: 230px;
+      height: 65px;
+    }
+  }
+  .header-middle {
+    margin-right: 180px;
+    border-radius: 5px;
+    border: 1px solid $light-grey;
+    .input {
+      text-align: start;
+
+      padding: 8px 150px;
+      outline: none;
+      font-size: 14px;
+      color: $grey-color;
+      border: none;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      &::placeholder {
+        text-align: center;
+      }
+    }
+
+    .button {
+      background-color: $blue-color;
+      padding: 8px 25px;
+      border: none;
+      outline: none;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: $white-color;
+      font-weight: bold;
+      letter-spacing: 1px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      cursor: pointer;
+    }
+    .button:hover {
+      opacity: 0.7;
+    }
+  }
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .MdOutlinePersonOutline {
+      color: $black-color;
+      font-size: 30px;
+    }
+    .MdOutlinePersonOutline:hover {
+      color: $blue-color;
+    }
+    .profile {
+      position: absolute;
+      top: 140px;
+      left: 250px;
+      
+    }
+    .BsFillHandbagFill {
+      color: $black-color;
+      font-size: 25px;
+    }
+    .BsFillHandbagFill:hover {
+      color: $blue-color;
+    }
+    .header-right-wrap {
+      display: flex;
+      flex-direction: column;
+      .cart {
+        text-decoration: none;
+        font-size: 12px;
+        color: $black-color;
+      }
+      .cart:hover {
+        color: $blue-color;
+      }
+      .money {
+        text-decoration: none;
+        color: $black-color;
+        font-weight: bold;
+        font-size: 14px;
+      }
+      .money:hover {
+        color: $blue-color;
+      }
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .Header {
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    border: none;
+    position: relative;
+    .header-left {
+      .header-left-img {
+        height: 40px;
+        width: 150px;
+      }
+    }
+    .header-middle {
+      position: absolute;
+      top: 60px;
+      margin-right: 0;
+      margin-left: 100px;
+      display: flex;
+    }
+    .header-right {
+      .header-right-wrap {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .Header {
+    padding: 10px 20px;
+    border: none;
+    position: relative;
+    .header-left {
+      .header-left-img {
+        height: 40px;
+        width: 150px;
+      }
+    }
+    .header-middle {
+      position: absolute;
+      top: 60px;
+      margin-right: 0;
+      margin-left: 0px;
+      display: flex;
+      .input {
+        padding: 8px 80px;
+      }
+    }
+    .header-right {
+      .header-right-wrap {
+        display: none;
+      }
+    }
+  }
+}

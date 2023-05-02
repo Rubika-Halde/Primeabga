@@ -1,0 +1,24 @@
+$black-color: #000000;
+$grey-color: #8c8c8c;
+$brown-color: #914900;
+$white-color: #fff;
+$light-grey: #d7d2d2;
+$blue-color: #0073bb;
+$red-color: #c0392b;
+$orange-color: #d94825;
+$dark-blue: #172337;
+$green: rgb(6, 102, 6);
+$yellow-color: #F08D12;
+$buy-now-btn:#E41022;
+@mixin prime($align, $justify) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+// media Queries
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;

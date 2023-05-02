@@ -1,0 +1,25 @@
+.Accessories {
+  @include prime(start, space-around);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: $white-color;
+  padding: 40px 30px;
+  width: 1200px;
+  height: 830px;
+  .accessories-one {
+    .accessories-one-wrap {
+      p {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+      .brands {
+        list-style-type: none;
+        text-align: start;
+        font-size: 14px;
+        .all {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

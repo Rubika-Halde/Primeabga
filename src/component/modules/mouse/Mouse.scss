@@ -1,0 +1,119 @@
+.Mouse {
+  .mouse-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .top {
+      width: 100%;
+      padding: 30px;
+      text-align: center;
+      background-color: rgb(241, 240, 240);
+      .mouse-top-p {
+        @include prime(center, center);
+        gap: 10px;
+        font-size: 14px;
+        color: $grey-color;
+      }
+    }
+  }
+  .mouse-bottom {
+    padding: 40px;
+    display: flex;
+    align-items: start;
+    .left-side {
+      width: 330px;
+      .mouse-bottom-left {
+        margin-bottom: 50px;
+        .Stock-Status {
+          margin-bottom: 10px;
+          font-size: 16px;
+        }
+        .spans {
+          display: flex;
+          gap: 10px;
+          color: $grey-color;
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+      }
+      .price {
+        .money {
+          margin-bottom: 10px;
+          font-size: 16px;
+        }
+        .mouse-price {
+          display: flex;
+          align-items: center;
+          gap: 80px;
+          font-size: 14px;
+          color: $grey-color;
+          margin-bottom: 20px;
+          .mouse-price-p {
+            border: 1px solid $light-grey;
+            padding: 10px 30px;
+          }
+        }
+      }
+      .warranty {
+        margin-top: 20px;
+        font-size: 16px;
+        .reset {
+          font-weight: bold;
+          color: $white-color;
+          margin-top: 20px;
+          padding: 8px 30px;
+          border: none;
+          border-radius: 5px;
+          background-color: $orange-color;
+        }
+      }
+    }
+    .right-side {
+      height: 700px;
+      overflow-y: scroll;
+      .right-side-Mouse-one {
+        display: flex;
+        .right-side-one {
+          padding: 10px;
+          .right-side-one-img {
+            height: 200px;
+            width: 200px;
+          }
+          .right-side-one-p {
+            max-width: 200px;
+            font-size: 16px;
+          }
+          .right-side-one-p:hover {
+            color: $blue-color;
+          }
+          .wrapper {
+            @include prime(center, center);
+            gap: 30px;
+            font-size: 14px;
+            .wrapper-offer {
+              color: $light-grey;
+            }
+            .wrapper-off {
+              color: $green;
+              font-weight: bold;
+            }
+          }
+        }
+        .right-side-one:hover {
+          background-color: $white-color;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .Mouse {
+    .mouse-bottom {
+      .left-side {
+        display: none;
+      }
+    }
+  }
+}

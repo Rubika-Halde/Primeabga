@@ -1,0 +1,124 @@
+.Categories {
+  padding-left: 40px;
+  border-bottom: 1px solid $light-grey;
+  position: relative;
+  z-index: 1;
+  .categories-shop {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-transform: uppercase;
+    .s {
+      .shop {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        background-color: $blue-color;
+        padding: 10px;
+        .shop-para {
+          text-transform: uppercase;
+          color: $white-color;
+          font-weight: bold;
+          font-size: 14px;
+        }
+        .BiMenu {
+          font-size: 18px;
+          color: $white-color;
+          font-weight: bold;
+        }
+      }
+      .shoby-com {
+        position: absolute;
+        top: 42px;
+        left: 0px;
+      }
+    }
+    .p {
+      .shop-one {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        .shop-one-para {
+          font-size: 14px;
+          color: $black-color;
+          font-weight: bold;
+        }
+        .shop-one-a {
+          color: $black-color;
+          font-size: 13px;
+          font-weight: bold;
+        }
+      }
+      .peri {
+        position: absolute;
+        top: 42px;
+        left: 40px;
+      }
+    }
+    .a {
+      .shop-two {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        .shop-two-para {
+          font-size: 14px;
+          color: $black-color;
+          font-weight: bold;
+        }
+        .shop-two-a {
+          font-size: 13px;
+        }
+      }
+      .access {
+        position: absolute;
+        top: 42px;
+        left: 40px;
+      }
+    }
+
+    .Gaming {
+      color: $black-color;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .e {
+      .shop-three {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        .shop-three-para {
+          font-size: 14px;
+          color: $black-color;
+          font-weight: bold;
+        }
+        .shop-three-a {
+          font-size: 13px;
+          color: $black-color;
+        }
+      }
+      .enter {
+        position: absolute;
+        top: 42px;
+        left: 40px;
+      }
+    }
+
+    .pre {
+      color: $black-color;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .Categories {
+    display: none;
+  }
+}
+@media (max-width: $sm) {
+  .Categories {
+    display: none;
+  }
+}

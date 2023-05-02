@@ -1,0 +1,76 @@
+.Peripherals {
+  @include prime(start, space-around);
+  background-color: $white-color;
+  padding: 40px 30px;
+  width: 800px;
+  height: 500px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  .peripheral-one {
+    .peripheral-one-left {
+      margin-bottom: 10px;
+      .PROCESSOR {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .PROCESSOR:hover {
+        background-color: rgba(95, 95, 246, 0.425);
+        padding: 3px 5px;
+        border-radius: 5px;
+      }
+      .ul {
+        text-align: start;
+        list-style-type: none;
+        font-size: 13px;
+      }
+    }
+  }
+  .peripheral-two {
+    .peripheral-two-p {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .peripheral-two-p:hover {
+      background-color: rgba(95, 95, 246, 0.425);
+      padding: 3px 5px;
+      border-radius: 5px;
+    }
+  }
+  .peripheral-three {
+    .peripheral-three-p {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .peripheral-three-p:hover {
+      background-color: rgba(95, 95, 246, 0.425);
+      padding: 3px 5px;
+      border-radius: 5px;
+    }
+  }
+  .peripheral-four {
+    .peripheral-four-p {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .peripheral-four-p:hover {
+      background-color: rgba(95, 95, 246, 0.425);
+      padding: 3px 5px;
+      border-radius: 5px;
+    }
+  }
+}
